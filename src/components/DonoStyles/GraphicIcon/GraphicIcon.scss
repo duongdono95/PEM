@@ -1,0 +1,144 @@
+.icon__container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.5s linear;
+  border-radius: 50%;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+  .check-icon {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+
+    border-radius: 50px;
+  }
+}
+.graphic-icon {
+  width: max-content;
+  height: max-content;
+}
+.icon-flip {
+  transform: rotate(180deg);
+}
+.baseload {
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: #57B6B2;
+}
+.select__icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(255, 255, 255, 0.7);
+}
+.x__icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+
+}
+.x__icon:hover {
+  cursor: pointer;
+  animation: rotateBlink  0.5s linear;
+}
+.x__icon::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 60%;
+  height: 3px;
+  border-radius: 50px;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+.x__icon::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 60%;
+  height: 3px;
+  border-radius: 50px;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.add__icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+}
+
+.add__icon::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 1px;
+  border-radius: 50rem;
+  background-color: white;
+}
+.add__icon::before {
+  position: absolute;
+  content: '';
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 1px;
+  border-radius: 50rem;
+  background-color: white;
+}
+.reset-icon {
+  cursor: pointer;
+}
+.paper__plane {
+  padding-top: 30%;
+  margin-left: -5%;
+}
+
+.arrow__icon {
+  .triangle {
+    width: 0;
+    height: 0;
+    border: 2.5px solid transparent;
+    border-top: 0;
+    border-bottom: 5px solid red;
+  }
+}
+@keyframes rotateBlink {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

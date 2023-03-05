@@ -1,0 +1,36 @@
+.switch__icon {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  .switch__handler{
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .pause__bar {
+    width: 3px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: white;
+  }
+  .switch__slider {
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(215, 245, 229);
+    width: 80%;
+    height: 60%;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}

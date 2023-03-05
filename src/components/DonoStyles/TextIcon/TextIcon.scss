@@ -1,0 +1,75 @@
+.text-icon {
+  width: max-content;
+  height: max-content;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--500);
+  }
+  //---------------------------------- note
+  .note {
+    width: 20px;
+    height: 20px;
+    padding-top: 4px;
+    border-radius: 50rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    span {
+      font-size: 8px;
+      font-weight: var(--500);
+    }
+  }
+
+  .ben {
+    background-color: rgb(255, 255, 255);
+    color: rgba(51, 51, 51, 0.8);
+  }
+  .ota {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+  }
+  //----------------------trading status
+  .status {
+    width: 45px;
+    height: 20px;
+    border-radius: 5px;
+    font-weight: var(--500);
+    padding-top: 3px;
+    font-size: 8px !important;
+  }
+  .traded {
+    background-color: #C81818;
+    color: white;
+  }
+  .trading {
+    background-color: #46C818;
+    color: white;
+  }
+  // ---------------------product icon
+  .contract {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    span {
+      font-size: 8px;
+      padding-top: 4px;
+    }
+  }
+  // -------------------------- Price Details
+  .p, .v , .l {
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    span {
+      height: 12px;
+    }
+  }
+}

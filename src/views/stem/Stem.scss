@@ -1,0 +1,73 @@
+.stem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  .stem__head {
+    max-height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .stem__body {
+    display: flex;
+    flex-direction: column;
+    .stem__regions {
+      display: flex;
+      width: 100%;
+      cursor: pointer;
+      .region {
+        flex-grow: 1;
+        background-color: var(--signature) ;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+      p {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        padding-top: 5px;
+      }
+      .active {
+        background-color: var(--signature-dark);
+      }
+    }
+    .stem__exs {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      background-color: var(--signature-dark);
+      padding: 10px;
+    }
+  }
+
+}
+.ex1 {
+  background-color: #86A335;
+}
+.ex2 {
+  background-color: #44A335;
+}
+.ex3 {
+  background-color: #359CA3;
+}
+.ex4 {
+  background-color: #3547A3;
+}
+.ex5 {
+  background-color: #8635A3;
+}
+.ex6 {
+  background-color: #A3354F;
+}
+.ex7 {
+  background-color: #A39835;
+}

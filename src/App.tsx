@@ -1,57 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import Stem from './views/stem/Stem';
+import { CssBaseline, makeStyles, ThemeProvider } from '@material-ui/core';
+import { theme } from 'style/theme';
 
+const connect = async () => {
+  const res = await fetch('https://dev.pem.electricity.cfd/negotiate?id=skip');
+  const data = await res.json();
+  const ws = new WebSocket(data.url, 'json.webpubsub.azure.v1');
+  const ackId = 0;
+  ws.onopen = () => {
+    console.log('connected');
+  };
+  ws.onerror = evt => {
+    console.error(`WebSocket error ${evt}`);
+  };
+  ws.onclose = evt => {
+    console.error(`WebSocket closed, code: ${evt.code}`);
+  };
+  ws.onmessage = event => {
+    const message = JSON.parse(event.data);
+    // if (message.type === 'message' && message.group === 'stream') {
+    console.log(event, message);
+  };
+};
+const useStyles = makeStyles(() => ({
+  main: { position: 'relative', display: 'flex', padding: 16 },
+  content: { height: '100%', width: '100%', display: 'flex' },
+}));
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className={classes.main}>
+        <div className={classes.content}>
+          <Stem />
+        </div>
+      </div>
+    </ThemeProvider>
   );
 }
 

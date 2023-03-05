@@ -1,0 +1,80 @@
+[
+  {
+    "favorite": true,
+    "type": "bid",
+    "time": "14:01",
+    "orderDetails": {
+      "note": "ben",
+      "contract": "EX1",
+      "product": "P1",
+      "price": 102,
+      "vol": 100,
+      "status": "traded"
+    }
+  },
+  {
+    "favorite": false,
+    "type": "ask",
+    "time": "14:02",
+    "orderDetails": {
+      "note": "ota",
+      "contract": "EX1",
+      "product": "P2",
+      "price": 102,
+      "vol": 100,
+      "status": "trading"
+    }
+  },
+  {
+    "favorite": false,
+    "type": "bid",
+    "time": "14:11",
+    "orderDetails": {
+      "note": "ota",
+      "contract": "EX5",
+      "product": "P5",
+      "price": 102,
+      "vol": 100,
+      "status": "trading"
+    }
+  },
+  {
+    "favorite": true,
+    "type": "bid",
+    "time": "14:07",
+    "orderDetails": {
+      "note": "ben",
+      "contract": "EX5",
+      "product": "baseload",
+      "price": 102,
+      "vol": 100,
+      "status": "trading"
+    }
+  },
+  {
+    "favorite": false,
+    "type": "bid",
+    "time": "14:07",
+    "orderDetails": {
+      "note": "ota",
+      "contract": "EX2",
+      "product": "P7",
+      "price": 102,
+      "vol": 100,
+      "status": "traded"
+    }
+  },
+  {
+    "favorite": true,
+    "type": "ask",
+    "time": "14:11",
+    "orderDetails": {
+      "note": "ben",
+      "contract": "EX7",
+      "product": "baseload",
+      "price": 102,
+      "vol": 100,
+      "status": "traded"
+    }
+  }
+]

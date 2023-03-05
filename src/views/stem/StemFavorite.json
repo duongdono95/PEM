@@ -1,0 +1,38 @@
+[
+  {
+    "note": "ota",
+    "contract": "EX1",
+    "product": "p1",
+    "date": "11/01/2023"
+  },
+  {
+    "note": "ben",
+    "contract": "EX2",
+    "product": "p2",
+    "date": "11/01/2023"
+  },
+  {
+    "note": "ota",
+    "contract": "EX3",
+    "product": "p3",
+    "date": "11/01/2023"
+  },
+  {
+    "note": "ben",
+    "contract": "EX4",
+    "product": "p4",
+    "date": "11/01/2023"
+  },
+  {
+    "note": "ota",
+    "contract": "EX5",
+    "product": "p5",
+    "date": "11/01/2023"
+  },
+  {
+    "note": "ben",
+    "contract": "EX6",
+    "product": "baseload",
+    "date": "11/01/2023"
+  }
+]

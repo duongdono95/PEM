@@ -1,0 +1,18 @@
+[
+  {
+    "client": "customer A",
+    "creditLimit": "1000"
+  },
+  {
+    "client": "customer B",
+    "creditLimit": "1000"
+  },
+  {
+    "client": "customer C",
+    "creditLimit": "1000"
+  },
+  {
+    "client": "customer D",
+    "creditLimit": "1000"
+  }
+]
