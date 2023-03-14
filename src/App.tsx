@@ -1,3 +1,4 @@
+import GlobalStyles from 'GlobalStyles/GlobalStyles';
 import React from 'react';
 import './App.css';
 import Stem from './views/stem/Stem';
@@ -29,17 +30,15 @@ const useStyles = makeStyles(() => ({
   content: { height: '100%', width: '100%', display: 'flex' },
 }));
 function App() {
-  const classes = useStyles();
-
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <div className={classes.main}>
-        <div className={classes.content}>
-          <Stem />
-        </div>
+    // <ThemeProvider theme={theme}>
+    // <CssBaseline />
+    <GlobalStyles>
+      <div className='stem-container'>
+        <Stem />
       </div>
-    </ThemeProvider>
+    </GlobalStyles>
+    // </ThemeProvider>
   );
 }
 

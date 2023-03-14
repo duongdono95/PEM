@@ -1,15 +1,28 @@
 import React from 'react';
 import './StemTradingBoard.scss';
 import data from '../../StemTradingBoard.json';
-import TradingBoardTop from './TradingBoardTop';
 import GraphicIcon from 'components/DonoStyles/GraphicIcon/GraphicIcon';
 import ProductPie from 'components/DonoStyles/GraphicIcon/ProductPie/ProductPie';
 import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
 const StemTradingBoard = () => {
   return (
     <div className='stem__trading__board'>
-      <TradingBoardTop />
-      <div className='trading__board-bottom'>
+      <div className='trading__board-timmer'>
+        <div className='trading__board-timer'>
+          <div>
+            <p className='strong'>15 mins</p>
+            <p>to the Next Stage</p>
+            <div className='timer'>
+              <div className='bar'></div>
+              <div className='point'></div>
+              <div className='point middle'></div>
+              <div className='point end'></div>
+              <div className='runner'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='trading__board-content'>
         <div className='header'>
           <p>Fav</p>
           <p>Type</p>

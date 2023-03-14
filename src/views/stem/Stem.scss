@@ -7,11 +7,10 @@
   justify-content: space-between;
   gap: 10px;
   .stem__head {
-    max-height: 50%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 30% 38% 30%;
+    grid-column-gap: 1%;
   }
   .stem__body {
     display: flex;
@@ -49,6 +48,13 @@
     }
   }
 
+}
+@media only screen and (max-width: 1400px) {
+  .stem__head {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .ex1 {
   background-color: #86A335;

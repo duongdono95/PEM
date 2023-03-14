@@ -59,6 +59,7 @@
   }
   // -------------------------- Price Details
   .p, .v , .l {
+    text-align: center;
     font-size: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
@@ -69,7 +70,9 @@
     justify-content: center;
     border-radius: 50px;
     span {
-      height: 12px;
+      font-size: 10px;
+      font-weight: 500;
+      padding-top: 3px;
     }
   }
 }

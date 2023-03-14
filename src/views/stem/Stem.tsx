@@ -4,10 +4,11 @@ import './Stem.scss';
 import data from './StemData.json';
 import StemManagement from './components/StemManagement/StemManagement';
 import StemTradingBoard from './components/StemTradingBoard/StemTradingBoard';
-import GlobalStyles from 'components/DonoStyles/GlobalStyles/GlobalStyles';
+import GlobalStyles from 'GlobalStyles/GlobalStyles';
 import StemFavorite from './components/StemFavorite/StemFavorite';
 import StemTicketForm from './components/StemTicketForm/StemTicketForm';
 import { TicketDetails } from 'types/stem.types';
+import DynamicBox from './components/DynamicBox/DynamicBox';
 const Stem = () => {
   const labelArray = Object.keys(data);
   const valueArray = Object.values(data);
@@ -25,9 +26,9 @@ const Stem = () => {
       <div className='stem'>
         {ticketFrom && <StemTicketForm data={ticketDetails} openTicketForm={setTicketForm} />}
         <div className='stem__head'>
-          <StemManagement />
-          <StemTradingBoard />
-          <StemFavorite />
+          <DynamicBox title='Management' content={<StemManagement />} />
+          <DynamicBox title='Trading Board' content={<StemTradingBoard />} />
+          <DynamicBox title='Favorite' content={<StemFavorite />} />
         </div>
         <div className='stem__body'>
           <div className='stem__regions'>
