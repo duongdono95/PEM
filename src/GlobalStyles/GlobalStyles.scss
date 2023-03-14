@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black01: rgba(0, 0, 0, 0.1);
+  --black02: rgba(0, 0, 0, 0.2);
+  --black03: rgba(0, 0, 0, 0.3);
+  --black04: rgba(0, 0, 0, 0.4);
+  --black: rgba(0, 0, 0);
+  --white01: rgba(255, 255, 255, 0.1);
+  --white02: rgba(255, 255, 255, 0.2);
+  --white03: rgba(255, 255, 255, 0.3);
+  --white05: rgba(255, 255, 255, 0.5);
+  --white08: rgba(255, 255, 255, 0.8);
+  --white: #fff;
+  --shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  --tex-color: rgb(57, 57, 57);
+  --300 : 300;
+  --400 : 400;
+  --500 : 500;
+  --600 : 600;
+  --700 : 700;
+  --signature: #57b6b2;
+  --signature-dark: #346D6B;
+}
+
+.ex1 {
+  background-color: #86A335;
+}
+.ex2 {
+  background-color: #44A335;
+}
+.ex3 {
+  background-color: #359CA3;
+}
+.ex4 {
+  background-color: #3547A3;
+}
+.ex5 {
+  background-color: #8635A3;
+}
+.ex6 {
+  background-color: #A3354F;
+}
+.ex7 {
+  background-color: #A39835;
+}
+
+@font-face {
+  font-family: centraNo2;
+  src: url('../fonts//CentraNo2-Thin.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: centraNo2;
+  src: url('../fonts/CentraNo2-Light.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: centraNo2;
+  src: url('../fonts/centrano2-medium-webfont.woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: centraNo2;
+  src: url('../fonts/CentraNo2-Extrabold.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: centraNo2;
+  src: url('../fonts/CentraNo2-Black.woff2');
+  font-weight: 700;
+}
+
+.stem-container {
+  font-family: 'centraNo2';
+  font-weight: 400;
+  font-size: 12px;
+  text-rendering: optimizespeed;
+  color: var(--white);
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #003f3d;
+}

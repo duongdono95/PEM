@@ -1,0 +1,22 @@
+.dynamic-box {
+  height: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--signature);
+  box-shadow: var(--shadow);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  &__title {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
+  }
+  &__content {
+    height: 100%;
+    background-color: var(--black01);
+  }
+}
