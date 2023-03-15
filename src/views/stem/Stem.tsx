@@ -39,7 +39,7 @@ const Stem = () => {
                     setActiveIndex(index);
                   }}
                   key={index}
-                  className={activeIndex === index ? 'region active' : 'region'}
+                  className={activeIndex !== index ? 'region inactive' : 'region'}
                 >
                   <p>{region}</p>
                 </div>

@@ -2,10 +2,29 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--signature);
-  width: 100%;
-  padding: 8px;
-  background-color: var(--black02);
+  .tools {
+    width: 100%;
+    height: 34px;
+    box-shadow: 0 5px 5px var(--black01);
+    display: flex;
+    align-items: center;
+    p {
+      width: 100%;
+      text-align: right;
+      font-size: 12px;
+      padding-right: 15px;
+      padding-top: 5px;
+    }
+  }
+  .favorite__list {
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px ;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-right: 5px;
+  }
   .favorite-row {
     display: flex;
     align-items: center;
@@ -22,8 +41,8 @@
         padding-top: 4px;
       }
     }
-    .favorite-row:hover {
-      background-color: var(--black02);
-    }
+  }
+  .favorite-row:hover {
+    background-color: var(--black01);
   }
 }

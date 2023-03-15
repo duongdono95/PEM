@@ -63,7 +63,7 @@
 
 @font-face {
   font-family: centraNo2;
-  src: url('../fonts/centrano2-medium-webfont.woff');
+  src: url('../fonts/CentraNo2-Medium.otf');
   font-weight: 500;
 }
 
@@ -94,3 +94,28 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   background-color: #003f3d;
 }
+
+// -------------------------Scrollbar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--white05);
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--white08);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+    box-shadow: 0 0 5px var(--white03);
+  }

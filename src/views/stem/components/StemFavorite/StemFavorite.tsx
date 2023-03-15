@@ -8,21 +8,26 @@ import ProductPie from 'components/DonoStyles/GraphicIcon/ProductPie/ProductPie'
 const StemFavorite = () => {
   return (
     <div className='stem__favorite'>
-      {data.map((item, index) => {
-        return (
-          <div key={index} className='favorite-row'>
-            <GraphicIcon type='star' />
-            <TextIcon note={item.note} />
-            <TextIcon contract={item.contract} />
-            <div className='product-group'>
-              <ProductPie product={item.product} />
-              <p>{item.product.toUpperCase()}</p>
+      <div className='tools'>
+        <p>Remove All Favorite</p>
+      </div>
+      <div className='favorite__list'>
+        {data.map((item, index) => {
+          return (
+            <div key={index} className='favorite-row'>
+              <GraphicIcon type='star' />
+              <TextIcon note={item.note} />
+              <TextIcon contract={item.contract} />
+              <div className='product-group'>
+                <ProductPie product={item.product} />
+                <p>{item.product.toUpperCase()}</p>
+              </div>
+              <p>{item.date}</p>
+              <GraphicIcon type='trash' />
             </div>
-            <p>{item.date}</p>
-            <GraphicIcon type='trash' />
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

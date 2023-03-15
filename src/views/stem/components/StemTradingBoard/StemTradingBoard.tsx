@@ -7,19 +7,17 @@ import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
 const StemTradingBoard = () => {
   return (
     <div className='stem__trading__board'>
-      <div className='trading__board-timmer'>
-        <div className='trading__board-timer'>
-          <div>
-            <p className='strong'>15 mins</p>
-            <p>to the Next Stage</p>
-            <div className='timer'>
-              <div className='bar'></div>
-              <div className='point'></div>
-              <div className='point middle'></div>
-              <div className='point end'></div>
-              <div className='runner'></div>
-            </div>
-          </div>
+      <div className='trading__board-timer'>
+        <div>
+          <p className='strong'>15 mins</p>
+          <p>to the Next Stage</p>
+        </div>
+        <div className='timer'>
+          <div className='bar'></div>
+          <div className='point'></div>
+          <div className='point middle'></div>
+          <div className='point end'></div>
+          <div className='runner'></div>
         </div>
       </div>
       <div className='trading__board-content'>

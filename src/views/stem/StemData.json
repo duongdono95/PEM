@@ -189,7 +189,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -412,7 +412,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -635,7 +635,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -858,7 +858,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -1081,7 +1081,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -1304,7 +1304,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -1527,7 +1527,7 @@
           }
         }
       },
-      "Baseload": {
+      "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,

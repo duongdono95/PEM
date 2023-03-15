@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../GraphicIcon.scss';
 interface Props {
   scale?: number;
   color?: string;
   fill?: string;
+  activate?: boolean;
 }
-const StarIcon: React.FC<Props> = ({ fill, color }) => {
+const StarIcon: React.FC<Props> = ({ activate }) => {
   const [favorite, setFavorite] = useState(false);
   const toggleStatus = () => {
     setFavorite(!favorite);
   };
+  useEffect(() => {
+    if (activate === true) {
+      setFavorite(true);
+    }
+  }, [activate]);
   return (
     <div onClick={toggleStatus} className='icon__container'>
       <svg width='24' height='24' viewBox='0 0 24 24' stroke={favorite ? '#FFC700' : 'white'} fill={favorite ? '#FFC700' : 'white'} xmlns='http://www.w3.org/2000/svg'>

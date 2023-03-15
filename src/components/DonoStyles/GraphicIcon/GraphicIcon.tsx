@@ -23,9 +23,10 @@ interface Props {
   scale?: number;
   color?: string;
   fill?: string;
+  activate?: boolean;
 }
 
-const GraphicIcon: React.FC<Props> = ({ type, scale }) => {
+const GraphicIcon: React.FC<Props> = ({ type, scale, activate }) => {
   const graphicIcon: TypeMap = {
     chevon: ChevonIcon,
     edit: EditIcon,
@@ -42,7 +43,8 @@ const GraphicIcon: React.FC<Props> = ({ type, scale }) => {
   const Element = graphicIcon[type];
   return (
     <div style={scale ? { transform: `scale(${scale})` } : { transform: 'scale(1)' }} className='graphic-icon'>
-      <Element type={type}></Element>
+      {type !== 'star' && <Element type={type}></Element>}
+      {type === 'star' && <Element type='star' activate={activate}></Element>}
     </div>
   );
 };
