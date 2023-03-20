@@ -3,20 +3,21 @@
   min-width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: var(--signature);
+  background-color: var(--white01);
   box-shadow: var(--shadow);
   border-radius: 10px;
   &__title {
     width: 100%;
-    color: white;
+    color: var(--signature);
     text-align: center;
     font-size: 24px;
     font-weight: 500;
     padding: 8px 0px 3px 0px;
+    border-bottom: 1.5px solid var(--signature);
   }
   &__content {
     height: 100%;
-    background-color: var(--black01);
+
   }
 
 }

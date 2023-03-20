@@ -5,11 +5,13 @@
   box-sizing: border-box;
 }
 :root {
+  --black005: rgba(0, 0, 0, 0.05);
   --black01: rgba(0, 0, 0, 0.1);
   --black02: rgba(0, 0, 0, 0.2);
   --black03: rgba(0, 0, 0, 0.3);
   --black04: rgba(0, 0, 0, 0.4);
   --black: rgba(0, 0, 0);
+  --white005:rgba(255, 255, 255, 0.05);
   --white01: rgba(255, 255, 255, 0.1);
   --white02: rgba(255, 255, 255, 0.2);
   --white03: rgba(255, 255, 255, 0.3);
@@ -23,8 +25,10 @@
   --500 : 500;
   --600 : 600;
   --700 : 700;
-  --signature: #57b6b2;
-  --signature-dark: #346D6B;
+  --signature: #3DA165;
+  --signature01:rgba(61, 161, 101, 0.1);
+  --signature02: rgba(61, 161, 101, 0.2);
+  --background: #00625E
 }
 
 .ex1 {
@@ -92,7 +96,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #003f3d;
+  background-image: linear-gradient(45deg, #121E14, #04280A ) ;
+  background-size: fill;
 }
 
 // -------------------------Scrollbar
@@ -110,7 +115,7 @@ body {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--white08);
+    background: var(--signature);
     border-radius: 10px;
   }
 

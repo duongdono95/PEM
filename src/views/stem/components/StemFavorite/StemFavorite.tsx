@@ -9,7 +9,7 @@ const StemFavorite = () => {
   return (
     <div className='stem__favorite'>
       <div className='tools'>
-        <p>Remove All Favorite</p>
+        <p>Remove All Favorites</p>
       </div>
       <div className='favorite__list'>
         {data.map((item, index) => {

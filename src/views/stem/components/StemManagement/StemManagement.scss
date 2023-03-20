@@ -16,9 +16,12 @@
       font-weight: 500;
     }
   }
-  .tab__inactive {
-    background-color: var(--black01);
+  .tab__active {
+    background-color: var(--signature02 );
   }
+  // .tab__inactive {
+  //   background-color: var(--black02);
+  // }
 }
 .stem__management-body {
   display: flex;
@@ -32,8 +35,9 @@
     align-items: center;
     justify-content: right;
     gap: 12px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     padding-right: 25px;
+    background-color: var(--white005);
     p{
       padding-top: 5px;
       font-size: 11px;

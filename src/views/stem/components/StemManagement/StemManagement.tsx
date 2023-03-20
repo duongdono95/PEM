@@ -21,7 +21,7 @@ const StemManagement = () => {
                 setControllerIndex(index);
               }}
               key={index}
-              className={controllerIndex !== index ? 'tab__inactive' : ''}
+              className={controllerIndex == index ? 'tab__active' : 'tab__inactive'}
             >
               {controller}
             </p>
