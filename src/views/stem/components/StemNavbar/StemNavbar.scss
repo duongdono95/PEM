@@ -1,11 +1,84 @@
 .stem__navbar {
   width: 96%;
-  height: 38px;
-  background-color: var(--signature01);
-  border-radius: 50px;
-  box-shadow: inset 3px 2px 10px rgba(255, 255, 255, 0.3), 0 0 10px rgb(0, 0, 0);
+  height: 40px;
+  padding: 3px 20px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  background-color: var(--white03);
+  border-radius: 50px;
+  box-shadow: inset 3px 2px 10px rgba(255, 255, 255, 0.3), 0 0 10px rgb(0, 0, 0);
   backdrop-filter: blur(20px);
-  justify-content: space-around;
+  .items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .item {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-right: 5px;
+    border-radius: 5px;
+    p {
+      font-size: 14px;
+      padding-top: 4px;
+    }
+  }
+  .always-expanded {
+    width: 130px;
+  }
+  .item:hover {
+    width: 130px;
+    transition: width 1s;
+    p {
+      white-space: nowrap;
+    }
+  }
+  .user-details {
+    display: flex;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    .user {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .company {
+      font-weight: 500;
+      font-size: 16px;
+      span {
+        font-weight: 400;
+      }
+    }
+    p {
+      font-size: 14px;
+      padding-top: 7px;
+    }
+  }
+  .item__group {
+    position: relative;
+    .expanded__menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          padding-top: 6px;
+          white-space: nowrap;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
 }

@@ -1,13 +1,16 @@
 .square__icon {
-  width: 28px;
+  min-width: 28px;
   height: 28px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: inset 2px 2px 5px var(--white05), 2px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 5px var(--white), inset -2px -2px 3px rgba(0, 0, 0, 0.5) ,2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.square__icon:hover {
+  background-color:rgba(255, 255, 255, 0.5) ;
 }
 
 .menu__icon {
