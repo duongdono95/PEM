@@ -9,6 +9,7 @@ import StemFavorite from './components/StemFavorite/StemFavorite';
 import StemTicketForm from './components/StemTicketForm/StemTicketForm';
 import { TicketDetails } from 'types/stem.types';
 import DynamicBox from './components/DynamicBox/DynamicBox';
+import StemNavbar from './components/StemNavbar/StemNavbar';
 const Stem = () => {
   const labelArray = Object.keys(data);
   const valueArray = Object.values(data);
@@ -24,6 +25,9 @@ const Stem = () => {
   return (
     <GlobalStyles>
       <div className='stem'>
+        <div className='navbar-container'>
+          <StemNavbar />
+        </div>
         {ticketFrom && <StemTicketForm data={ticketDetails} openTicketForm={setTicketForm} />}
         <div className='stem__head'>
           <DynamicBox title='Management' content={<StemManagement />} />

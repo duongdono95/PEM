@@ -27,8 +27,13 @@
   --700 : 700;
   --signature: #3DA165;
   --signature01:rgba(61, 161, 101, 0.1);
+  --signature015:rgba(61, 161, 101, 0.15);
   --signature02: rgba(61, 161, 101, 0.2);
-  --background: #00625E
+  --background: #00625E;
+  --high-speed: #46c818;
+  --medium-speed: #d6a12e;
+  --low-speed: #ea3f3f;
+
 }
 
 .ex1 {
@@ -96,7 +101,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-image: linear-gradient(45deg, #121E14, #04280A ) ;
+  background-image: linear-gradient(45deg, #0d170f, #032108 ) ;
   background-size: fill;
 }
 

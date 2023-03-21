@@ -1,4 +1,3 @@
-import GlobalStyles from 'GlobalStyles/GlobalStyles';
 import React from 'react';
 import './App.css';
 import Stem from './views/stem/Stem';
@@ -25,19 +24,17 @@ const connect = async () => {
     console.log(event, message);
   };
 };
-const useStyles = makeStyles(() => ({
-  main: { position: 'relative', display: 'flex', padding: 16 },
-  content: { height: '100%', width: '100%', display: 'flex' },
-}));
+// const useStyles = makeStyles(() => ({
+//   main: { position: 'relative', display: 'flex', padding: 16 },
+//   content: { height: '100%', width: '100%', display: 'flex' },
+// }));
 function App() {
   return (
     // <ThemeProvider theme={theme}>
     // <CssBaseline />
-    <GlobalStyles>
-      <div className='stem-container'>
-        <Stem />
-      </div>
-    </GlobalStyles>
+    <div className='stem-container'>
+      <Stem />
+    </div>
     // </ThemeProvider>
   );
 }

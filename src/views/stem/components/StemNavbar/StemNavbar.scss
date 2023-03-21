@@ -1,0 +1,11 @@
+.stem__navbar {
+  width: 96%;
+  height: 38px;
+  background-color: var(--signature01);
+  border-radius: 50px;
+  box-shadow: inset 3px 2px 10px rgba(255, 255, 255, 0.3), 0 0 10px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  justify-content: space-around;
+}

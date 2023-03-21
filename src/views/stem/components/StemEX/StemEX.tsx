@@ -33,7 +33,6 @@ const StemEX: React.FC<Props> = ({ label, data, date, openTicketForm, handleTick
         <div className={`ex__header ${label.toLowerCase()}`}>
           <p className='product__type'>{label}</p>
           <p>{date}</p>
-          <GraphicIcon type='chevon' />
         </div>
         {/* --------------------Column Details ------------------------------ */}
         {valueArray.map((product, index) => {

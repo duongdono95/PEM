@@ -11,10 +11,10 @@ const SwitchIcon = () => {
       className='switch__icon'
     >
       <div style={isActive ? { backgroundColor: 'white', left: '-5%' } : { backgroundColor: 'rgb(177, 177, 177)', left: '35%' }} className='switch__handler'>
-        <div style={isActive ? { backgroundColor: '#57b6b2' } : { backgroundColor: 'white' }} className='pause__bar'></div>
-        <div style={isActive ? { backgroundColor: '#57b6b2' } : { backgroundColor: 'white' }} className='pause__bar'></div>
+        <div style={isActive ? { backgroundColor: 'var(--signature)' } : { backgroundColor: 'white' }} className='pause__bar'></div>
+        <div style={isActive ? { backgroundColor: 'var(--signature)' } : { backgroundColor: 'white' }} className='pause__bar'></div>
       </div>
-      <div style={isActive ? { backgroundColor: '#6EC5C1' } : { backgroundColor: 'white' }} className='switch__slider'></div>
+      <div style={isActive ? { backgroundColor: 'var(--signature)' } : { backgroundColor: 'white' }} className='switch__slider'></div>
     </div>
   );
 };
