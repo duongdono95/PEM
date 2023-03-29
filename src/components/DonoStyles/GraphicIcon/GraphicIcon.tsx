@@ -11,7 +11,7 @@ import SwitchIcon from '../SwitchIcon/SwitchIcon';
 import AddIcon from './AddIcon/AddIcon';
 import CloseIcon from './CloseIcon/CloseIcon';
 import ResetIcon from './ResetIcon/ResetIcon';
-import paperPlane from './paperPlane/paperPlane';
+import PaperPlane from './paperPlane/PaperPlane';
 
 type GraphicIconType = 'reset' | 'switchIcon' | 'chevon' | 'edit' | 'star' | 'ticket' | 'trash' | 'selectIcon' | 'add' | 'close' | 'paperPlane';
 type TypeMap = {
@@ -38,7 +38,7 @@ const GraphicIcon: React.FC<Props> = ({ type, scale, activate }) => {
     switchIcon: SwitchIcon,
     add: AddIcon,
     close: CloseIcon,
-    paperPlane: paperPlane,
+    paperPlane: PaperPlane,
   };
   const Element = graphicIcon[type];
   return (

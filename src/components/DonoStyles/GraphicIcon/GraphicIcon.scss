@@ -107,10 +107,7 @@
 .reset-icon {
   cursor: pointer;
 }
-.paper__plane {
-  padding-top: 30%;
-  margin-left: -5%;
-}
+
 .product-pie, .baseload {
   width: 20px;
   height: 20px;
@@ -118,6 +115,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.paper__plane {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  transform: scale(0.7) ;
+  padding-top: 10%;
+
 }
 
 .arrow__icon {

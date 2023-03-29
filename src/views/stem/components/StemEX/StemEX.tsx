@@ -4,7 +4,6 @@ import '../../Stem.scss';
 import { EX, TicketDetails } from 'types/stem.types';
 import GraphicIcon from 'components/DonoStyles/GraphicIcon/GraphicIcon';
 import ProductPie from 'components/DonoStyles/GraphicIcon/ProductPie/ProductPie';
-import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
 
 interface Props {
   contractType: string;
@@ -15,22 +14,12 @@ interface Props {
   handleTicketDetails: React.Dispatch<React.SetStateAction<TicketDetails>>;
 }
 
-const blankTicketForm: TicketDetails = {
-  contract: '',
-  day: '',
-  product: '',
-  bestVol: 0,
-  bestPrice: 0,
-  lastTrade: 0,
-};
 const StemEX: React.FC<Props> = ({ data, openTicketForm, handleTicketDetails, contractType, date }) => {
-  const [ticketData, setTicketData] = useState<TicketDetails>(blankTicketForm);
   const products = Object.entries(data.data);
 
   const ticketForm = (details: TicketDetails) => {
     openTicketForm(true);
     handleTicketDetails(details);
-    console.log('hello');
   };
   return (
     <>
@@ -39,7 +28,6 @@ const StemEX: React.FC<Props> = ({ data, openTicketForm, handleTicketDetails, co
         {products.map((product, index) => {
           const tradingDetailObject = product[1].tradingDetails;
           const tradingDetailsArray = Object.entries(tradingDetailObject);
-          console.log(product);
           const ticket = {
             contract: contractType,
             day: date,

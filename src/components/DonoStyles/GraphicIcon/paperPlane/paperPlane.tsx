@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../GraphicIcon.scss';
+interface Props {
+  submited: boolean;
+}
 
-const paperPlane = () => {
+const PaperPlane = () => {
   return (
-    <div style={{ transform: `scale(0.7)` }} className='paper__plane'>
+    <div className='paper__plane'>
       <svg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
           fillRule='evenodd'
@@ -15,4 +19,4 @@ const paperPlane = () => {
   );
 };
 
-export default paperPlane;
+export default PaperPlane;

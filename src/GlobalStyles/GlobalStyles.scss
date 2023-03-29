@@ -134,3 +134,17 @@ body {
     background: var(--white);
     box-shadow: 0 0 5px var(--white03);
   }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+  .hidden {
+    opacity: 0;
+    transition: 1s ease-in;
+  }
