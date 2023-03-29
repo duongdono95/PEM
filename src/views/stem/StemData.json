@@ -127,68 +127,6 @@
           }
         }
       },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
       "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
@@ -320,68 +258,6 @@
         }
       },
       "p4": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -573,68 +449,6 @@
           }
         }
       },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
       "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
@@ -766,68 +580,6 @@
         }
       },
       "p4": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,
@@ -1019,68 +771,6 @@
           }
         }
       },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
       "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
@@ -1242,68 +932,6 @@
           }
         }
       },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
       "baseload": {
         "bestVol": 100,
         "bestPrice": 100,
@@ -1435,68 +1063,6 @@
         }
       },
       "p4": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p5": {
-        "bestVol": 100,
-        "bestPrice": 100,
-        "lastTrade": 100,
-        "tradingDetails": {
-          "1stLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "2ndLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "3rdLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          },
-          "4thLine": {
-            "bidVol": 100,
-            "bidPrice": 105,
-            "askPrice": 110,
-            "askVol": 110
-          }
-        }
-      },
-      "p6": {
         "bestVol": 100,
         "bestPrice": 100,
         "lastTrade": 100,

@@ -59,18 +59,6 @@ export type EX = {
       lastTrade: number;
       tradingDetails: EXTradingDetails;
     };
-    p5: {
-      bestVol: number;
-      bestPrice: number;
-      lastTrade: number;
-      tradingDetails: EXTradingDetails;
-    };
-    p6: {
-      bestVol: number;
-      bestPrice: number;
-      lastTrade: number;
-      tradingDetails: EXTradingDetails;
-    };
     baseload: {
       bestVol: number;
       bestPrice: number;

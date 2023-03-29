@@ -1,10 +1,10 @@
 import GraphicIcon from 'components/DonoStyles/GraphicIcon/GraphicIcon';
 import ProductPie from 'components/DonoStyles/GraphicIcon/ProductPie/ProductPie';
 import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { TicketDetails } from 'types/stem.types';
 import './StemTicketForm.scss';
-import FormSubmit from './FormSubmit';
+import Submitter from './Submitter';
 
 interface Props {
   data?: TicketDetails;
@@ -12,6 +12,13 @@ interface Props {
 }
 
 const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
+  const roles = ['buyer', 'seller'];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeRole, setActiveRole] = useState(roles[activeIndex]);
+
+  useEffect(() => {
+    setActiveRole(roles[activeIndex]);
+  }, [activeIndex]);
   console.log(data?.day);
   const collapseTicketForm = () => {
     openTicketForm(false);
@@ -85,7 +92,16 @@ const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
           </div>
         </div>
         <div className='submit__container'>
-          <FormSubmit />
+          <div className='roles'>
+            {roles.map((role, index) => {
+              return (
+                <p key={index} className={role === activeRole ? `${role}` : `${role} opacity05`} onClick={() => setActiveIndex(index)}>
+                  {role === 'buyer' ? 'Buyer' : 'Seller'}
+                </p>
+              );
+            })}
+          </div>
+          <Submitter role={activeRole} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 .dynamic-box {
-  height: 300px;
+  height: 280px;
   min-width: 400px;
   display: flex;
   flex-direction: column;
@@ -8,11 +8,12 @@
   border-radius: 10px;
   &__title {
     width: 100%;
+    height: 34px;
     color: var(--signature);
     text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-    padding: 8px 0px 3px 0px;
+    font-size: 20px;
+    padding-top: 3px;
+    font-weight: 600;
     border-bottom: 1.5px solid var(--signature);
   }
   &__content {

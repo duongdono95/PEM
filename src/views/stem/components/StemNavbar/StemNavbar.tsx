@@ -10,7 +10,7 @@ const StemNavbar = () => {
       <div className='items'>
         <div className='user-details'>
           <NameDisplayer type='company' render='Company Name' />
-          <NameDisplayer type='user' render='User Name' />
+          <p>User Name</p>
         </div>
         <div className='item'>
           <SquareIcon type='conectedIcon' />
@@ -20,22 +20,9 @@ const StemNavbar = () => {
           <SquareIcon type='internetSpeedIcon' />
           <p>Ping: 100ms</p>
         </div>
-        <div className='item__group'>
-          <div className='icon' onClick={() => setExpandedMenu(!expandedMenu)}>
-            <SquareIcon type='menuIcon' />
-          </div>
-          {expandedMenu && (
-            <div className='expanded__menu'>
-              <div>
-                <p>User Profile</p>
-                <SquareIcon type='profileIcon' />
-              </div>
-              <div>
-                <p>Profile</p>
-                <SquareIcon type='logOutIcon' />
-              </div>
-            </div>
-          )}
+        <div className='item'>
+          <SquareIcon type='logOutIcon' />
+          <p>Log Out</p>
         </div>
       </div>
     </div>

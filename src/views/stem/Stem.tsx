@@ -10,6 +10,7 @@ import StemTicketForm from './components/StemTicketForm/StemTicketForm';
 import { TicketDetails } from 'types/stem.types';
 import DynamicBox from './components/DynamicBox/DynamicBox';
 import StemNavbar from './components/StemNavbar/StemNavbar';
+import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
 const Stem = () => {
   const labelArray = Object.keys(data);
   const valueArray = Object.values(data);
@@ -53,9 +54,46 @@ const Stem = () => {
           <div className='stem__exs'>
             {valueArray.map((ex, index: number) => {
               return (
-                <React.Fragment key={index}>
-                  <StemEX openTicketForm={setTicketForm} handleTicketDetails={setTicketDetails} label={labelArray[index]} data={ex} date={ex.date} />
-                </React.Fragment>
+                <div className='ex' key={index}>
+                  <div className={`${labelArray[index].toLowerCase()} ex-header`}>
+                    <p className='ex-label'>{labelArray[index]}</p>
+                    <p className='ex-date'>{ex.date}</p>
+                  </div>
+                  <div className='categories-container'>
+                    <div className='empty-boxes'>
+                      <div className='empty-box'></div>
+                      <div className='empty-box'></div>
+                    </div>
+                    <div className='categories'>
+                      <div className='category'>
+                        <p>B</p>
+                        <div>
+                          <TextIcon priceDetails='v' />
+                        </div>
+                      </div>
+                      <div className='category'>
+                        <p>B</p>
+                        <div>
+                          <TextIcon priceDetails='p' />
+                        </div>
+                      </div>
+                      <div className='category'>
+                        <p>A</p>
+                        <div>
+                          <TextIcon priceDetails='p' />
+                        </div>
+                      </div>
+                      <div className='category'>
+                        <p>A</p>
+                        <div>
+                          <TextIcon priceDetails='v' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='empty-box'></div>
+                  </div>
+                  <StemEX openTicketForm={setTicketForm} date={ex.date} contractType={labelArray[index]} handleTicketDetails={setTicketDetails} data={ex} />
+                </div>
               );
             })}
           </div>

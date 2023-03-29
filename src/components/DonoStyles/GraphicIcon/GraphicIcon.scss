@@ -30,13 +30,7 @@
 .icon-flip {
   transform: rotate(180deg);
 }
-.baseload {
-  width: 22px;
-  height: 22px;
-  border-radius: 50px;
-  border: 1px solid white;
-  background-color: #57B6B2;
-}
+
 .select__icon {
   width: 10px;
   height: 10px;
@@ -116,6 +110,14 @@
 .paper__plane {
   padding-top: 30%;
   margin-left: -5%;
+}
+.product-pie, .baseload {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow__icon {
