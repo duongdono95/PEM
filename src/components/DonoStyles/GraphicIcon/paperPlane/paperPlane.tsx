@@ -2,7 +2,7 @@ import React from 'react';
 
 const paperPlane = () => {
   return (
-    <div className='paper__plane'>
+    <div style={{ transform: `scale(0.7)` }} className='paper__plane'>
       <svg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
           fillRule='evenodd'

@@ -95,7 +95,7 @@ const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
           <div className='roles'>
             {roles.map((role, index) => {
               return (
-                <p key={index} className={role === activeRole ? `${role}` : `${role} opacity05`} onClick={() => setActiveIndex(index)}>
+                <p key={index} className={role} style={role === activeRole ? { opacity: 1 } : { opacity: 0.5 }} onClick={() => setActiveIndex(index)}>
                   {role === 'buyer' ? 'Buyer' : 'Seller'}
                 </p>
               );

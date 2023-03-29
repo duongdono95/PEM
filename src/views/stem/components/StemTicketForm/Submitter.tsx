@@ -6,17 +6,22 @@ interface Props {
 }
 
 const Submitter: React.FC<Props> = ({ role }) => {
-  const [isBuy, setIsBuy] = useState(true);
-
   const containerRef = useRef<HTMLDivElement>(null);
-
-  const roles = {
-    buyer: {},
-    seller: {},
-  };
-  const rolesArray = Object.entries(roles);
-  console.log(roles);
-  return <div ref={containerRef} className='submitter__container'></div>;
+  return (
+    <div ref={containerRef} className='submitter' style={{ backgroundColor: `var(--${role})` }}>
+      <div className='slider'>
+        <div className='handler-container'>
+          <p style={{ color: `var(--${role})` }} className='handler'>
+            {role === 'buyer' ? 'B' : 'S'}
+          </p>
+        </div>
+        <p>Drag to Submit</p>
+        <div className='drop-zone'>
+          <GraphicIcon type='paperPlane' />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Submitter;

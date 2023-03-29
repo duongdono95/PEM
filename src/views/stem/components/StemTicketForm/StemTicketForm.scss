@@ -147,25 +147,21 @@
     .roles {
       width: 100%;
       display: flex;
-      div {
-        width: 100%;
-      }
       p {
         padding:7px 0 3px 0;
         flex-grow: 1;
         text-align: center;
         font-size: 16px;
         font-weight: 500;
+        cursor: pointer;
+
       }
       .buyer {
-        background-color: var(--buyer05);
+        background-color: var(--buyer);
 
       }
       .seller {
-        background-color: var(--seller05);
-      }
-      .opacity05 {
-        opacity: 0.5
+        background-color: var(--seller);
       }
     }
   }
@@ -173,18 +169,83 @@
 
 
 // -----------------------Ticket Form Styles--------------------------
-.submitter__container {
+.submitter {
   width: 100%;
-  padding: 2% 4%;
-}
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 3%;
 
+  .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    p {
+      padding-top: 3px;
+    }
+  }
+  .handler-container {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    .handler {
+      font-weight: 500;
+      font-size: 16px;
+      padding-top: 7px;
+    }
+  }
+  .handler-container::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    animation: pumping 2s infinite;
+    z-index: -1;
+  }
+  .drop-zone {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+  }
+  .drop-zone::after{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    animation: pumping 2s infinite;
+    z-index: -1;
+  }
+}
 @keyframes pumping {
   0% {
-    transform: scale(1);
+    transform: scale(0);
     opacity: 1;
   }
   100% {
-    transform: scale(1.3);
+    transform: scale(1.5);
     opacity: 0;
   }
 }
