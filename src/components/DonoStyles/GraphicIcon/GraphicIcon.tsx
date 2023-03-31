@@ -11,7 +11,7 @@ import SwitchIcon from '../SwitchIcon/SwitchIcon';
 import AddIcon from './AddIcon/AddIcon';
 import CloseIcon from './CloseIcon/CloseIcon';
 import ResetIcon from './ResetIcon/ResetIcon';
-import PaperPlane from './paperPlane/PaperPlane';
+import PaperPlane from './PaperPlane/PaperPlane';
 
 type GraphicIconType = 'reset' | 'switchIcon' | 'chevon' | 'edit' | 'star' | 'ticket' | 'trash' | 'selectIcon' | 'add' | 'close' | 'paperPlane';
 type TypeMap = {

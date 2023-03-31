@@ -1,5 +1,5 @@
 import GraphicIcon from 'components/DonoStyles/GraphicIcon/GraphicIcon';
-import PaperPlane from 'components/DonoStyles/GraphicIcon/paperPlane/PaperPlane';
+import PaperPlane from 'components/DonoStyles/GraphicIcon/PaperPlane/PaperPlane';
 import ProductPie from 'components/DonoStyles/GraphicIcon/ProductPie/ProductPie';
 import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
 import React, { useState, useEffect, useRef } from 'react';
@@ -16,6 +16,7 @@ const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
   const [activeRole, setActiveRole] = useState('buyer');
 
   // functions & States for Draggable button
+  const containerRef = useRef<HTMLDivElement>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
   const sliderBarRef = useRef<HTMLDivElement>(null);
   const sliderBarWidth = sliderBarRef.current?.offsetWidth;
@@ -26,6 +27,21 @@ const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
   const [mouseDownPosition, setMouseDownPosition] = useState(0);
   const [mouseMovingPosition, setMouseMovingPosition] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const changeRole = (role: string) => {
+    setActiveRole(role);
+    setIsSubmitted(false);
+    setSliderPosition(0);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsSubmitted(false);
+      setSliderPosition(0);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [isSubmitted]);
+
   const mouseDown = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     setMouseIsDown(true);
     if (sliderBarWidth !== undefined && sliderWidth !== undefined) {
@@ -36,7 +52,6 @@ const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
   const mouseUp = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     setMouseIsDown(false);
     const movingDistance = mouseMovingPosition - mouseDownPosition;
-    // the condition to make sure that the mouse up event is not tracked when user clicks anywhere
     if (movingDistance >= limitedMovement && sliderPosition !== 0) {
       setSliderPosition(limitedMovement);
       setIsSubmitted(true);
@@ -58,22 +73,8 @@ const StemTicketForm: React.FC<Props> = ({ data, openTicketForm }) => {
     }
   };
 
-  const changeRole = (role: string) => {
-    setActiveRole(role);
-    setIsSubmitted(false);
-    setSliderPosition(0);
-  };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsSubmitted(false);
-      setSliderPosition(0);
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, [isSubmitted]);
-
   return (
-    <div className='stem__ticket__form' onMouseMove={e => mouseMove(e)} onTouchMove={e => mouseMove} onMouseUp={e => mouseUp(e)} onTouchEnd={e => mouseUp}>
+    <div ref={containerRef} className='stem__ticket__form' onMouseMove={e => mouseMove(e)} onMouseUp={e => mouseUp(e)} onTouchEnd={e => mouseUp}>
       <div className='ticket__form'>
         <div onClick={() => openTicketForm(false)} className='collapse__icon'>
           <GraphicIcon type='close' scale={1.5} />
