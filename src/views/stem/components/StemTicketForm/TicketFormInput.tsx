@@ -4,16 +4,16 @@ import TextIcon from 'components/DonoStyles/TextIcon/TextIcon';
 
 const TicketFormInput = () => {
   const initialForm = {
-    bidVol: '',
-    bidPrice: '',
+    bidVol: '0',
+    bidPrice: '0',
   };
   const increasementSteps = ['1', '3', '5', '10'];
   const [inputData, setInputData] = useState(initialForm);
-  // const increasement = (a: number, b: number) => {
-  //   const sum = a + b;
-  //   setInputData(prev => ({ ...prev, bidVol: sum }));
-  //   console.log(inputData);
-  // };
+  const handleIncreasement = (a: string, b: string) => {
+    const sum = parseInt(a) + parseInt(b);
+    setInputData(prev => ({ ...prev, bidVol: sum.toString() }));
+    console.log(inputData);
+  };
 
   useEffect(() => {
     setInputData(inputData);
@@ -41,18 +41,31 @@ const TicketFormInput = () => {
             <label htmlFor='bid__vol'>Bid</label>
             <TextIcon priceDetails='p' />
           </div>
-          <input min={0} type='number' id='bid__vol' />
+          <input
+            value={inputData.bidPrice}
+            min={0}
+            type='number'
+            id='bid__vol'
+            onChange={e => {
+              setInputData(prev => ({ ...prev, bidPrice: e.target.value }));
+            }}
+          />
         </div>
       </div>
       <div className='inputs-right'>
         {increasementSteps.map((step, index) => {
           return (
-            <div key={index} className='step'>
+            <div key={index} className='step' onClick={() => handleIncreasement(step, inputData.bidVol)}>
               <p>+{step}</p>
             </div>
           );
         })}
-        <div className='reset'>
+        <div
+          className='reset'
+          onClick={() => {
+            setInputData(prev => ({ ...prev, bidPrice: '0', bidVol: '0' }));
+          }}
+        >
           <GraphicIcon type='reset' />
         </div>
       </div>
